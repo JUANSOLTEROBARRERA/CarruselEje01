@@ -1,0 +1,7 @@
+{
+  "name": "actoct13",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

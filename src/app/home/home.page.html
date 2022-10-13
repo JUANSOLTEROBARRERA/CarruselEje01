@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Galería de Imágenes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let photo of photos">
+        <ion-card>
+          <img [src]="photo.url"/>
+          <ion-card-header>
+            <ion-card-tittle>{{photo.name}}</ion-card-tittle>
+          </ion-card-header>
+          <ion-card-content>
+            {{photo.description}}
+          </ion-card-content>
+      </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
